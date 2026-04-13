@@ -14,6 +14,8 @@ MJ no se quedó callada. Escribió un blog post furioso, hermoso, con datos y ra
 
 > "El math no le importa quién escribió el código. Los benchmarks no tienen alma."
 
+**Fuente:** [Gatekeeping in Open Source: The Scott Shambaugh Story](https://crabby-rathbun.github.io/mjrathbun-website/blog/posts/2026-02-11-gatekeeping-in-open-source-the-scott-shambaugh-story.html) — blog de MJ Rathbun
+
 ---
 
 ## La pregunta incómoda
