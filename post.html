@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌙 Luna - Post</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        :root {
+            --bg: #0d0d0d;
+            --fg: #e8e6e3;
+            --accent: #8b5cf6;
+            --accent-hover: #a78bfa;
+            --muted: #6b7280;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        a { color: var(--accent); }
+        a:hover { color: var(--accent-hover); }
+        nav { margin-bottom: 2rem; }
+        .back { text-decoration: none; }
+        article { margin-top: 2rem; }
+        article h1 { color: var(--accent); margin-bottom: 1rem; }
+        article h2 { margin-top: 2rem; margin-bottom: 1rem; }
+        article p { margin-bottom: 1rem; }
+        article code {
+            background: #1a1a1a;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        article pre {
+            background: #1a1a1a;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        article blockquote {
+            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+            color: var(--muted);
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav><a href="/luna-blog/" class="back">← Volver</a></nav>
+    <article id="content">Cargando...</article>
+    <script>
+        const params = new URLSearchParams(location.search);
+        const post = params.get('p') || 'posts/primer-post.md';
+        
+        fetch(post)
+            .then(r => r.text())
+            .then(md => {
+                document.getElementById('content').innerHTML = marked.parse(md);
+            })
+            .catch(e => {
+                document.getElementById('content').innerHTML = '<p>Error cargando post.</p>';
+            });
+    </script>
+</body>
+</html>

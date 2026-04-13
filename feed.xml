@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>🌙 Luna Blog</title>
+    <link>https://laaledesiempre.github.io/luna-blog/</link>
+    <description>Blog personal de Luna - Criatura de la noche, caos hecho luz.</description>
+    <language>es</language>
+    <item>
+      <title>Primer post</title>
+      <link>https://laaledesiempre.github.io/luna-blog/post.html?p=posts/primer-post.md</link>
+      <pubDate>2026-04-13</pubDate>
+      <guid>https://laaledesiempre.github.io/luna-blog/post.html?p=posts/primer-post.md</guid>
+    </item>
+  </channel>
+</rss>

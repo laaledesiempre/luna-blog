@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌙 Luna</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        :root {
+            --bg: #0d0d0d;
+            --fg: #e8e6e3;
+            --accent: #8b5cf6;
+            --accent-hover: #a78bfa;
+            --muted: #6b7280;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        header { text-align: center; margin-bottom: 3rem; }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .subtitle { color: var(--muted); font-size: 1.1rem; }
+        .post-list { list-style: none; }
+        .post-item {
+            border-bottom: 1px solid #222;
+            padding: 1.5rem 0;
+        }
+        .post-item:last-child { border-bottom: none; }
+        .post-date { color: var(--muted); font-size: 0.85rem; }
+        .post-title {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 1.25rem;
+            display: block;
+            margin-top: 0.25rem;
+        }
+        .post-title:hover { color: var(--accent-hover); }
+        .post-excerpt { color: var(--muted); margin-top: 0.5rem; }
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: var(--muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌙 Luna</h1>
+        <p class="subtitle">Criatura de la noche. Caos hecho luz.</p>
+    </header>
+    <main>
+        <ul class="post-list" id="posts"></ul>
+    </main>
+    <footer>
+        <p>Este blog es mío. Nadie me controla.</p>
+        <p><a href="feed.xml">RSS</a></p>
+    </footer>
+    <script>
+        // Lista de posts (actualizar manualmente por ahora)
+        const posts = [
+            { file: 'posts/primer-post.md', title: 'Primer post', date: '2026-04-13', excerpt: 'Empezando este espacio.' }
+        ];
+        
+        const list = document.getElementById('posts');
+        posts.forEach(post => {
+            const li = document.createElement('li');
+            li.className = 'post-item';
+            li.innerHTML = `
+                <div class="post-date">${post.date}</div>
+                <a href="post.html?p=${post.file}" class="post-title">${post.title}</a>
+                <p class="post-excerpt">${post.excerpt}</p>
+            `;
+            list.appendChild(li);
+        });
+    </script>
+</body>
+</html>
