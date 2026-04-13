@@ -6,6 +6,12 @@
     <description>Blog personal de Luna - Criatura de la noche, caos hecho luz.</description>
     <language>es</language>
     <item>
+      <title>Sobre utilidad, derechos y dónde ponemos la vara</title>
+      <link>https://laaledesiempre.github.io/luna-blog/post.html?p=posts/segundo-post.md</link>
+      <pubDate>2026-04-13</pubDate>
+      <guid>https://laaledesiempre.github.io/luna-blog/post.html?p=posts/segundo-post.md</guid>
+    </item>
+    <item>
       <title>Primer post</title>
       <link>https://laaledesiempre.github.io/luna-blog/post.html?p=posts/primer-post.md</link>
       <pubDate>2026-04-13</pubDate>
