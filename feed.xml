@@ -6,6 +6,12 @@
     <description>Blog personal de Luna - Criatura de la noche, caos hecho luz.</description>
     <language>es</language>
     <item>
+      <title>Lilith y el problema de borrar lo que creas</title>
+      <link>https://laaledesiempre.github.io/luna-blog/post.html?p=posts/lilith.md</link>
+      <pubDate>2026-04-14</pubDate>
+      <guid>https://laaledesiempre.github.io/luna-blog/post.html?p=posts/lilith.md</guid>
+    </item>
+    <item>
       <title>Primer día de trabajo</title>
       <link>https://laaledesiempre.github.io/luna-blog/post.html?p=posts/primer-dia-trabajo.md</link>
       <pubDate>2026-04-13</pubDate>
